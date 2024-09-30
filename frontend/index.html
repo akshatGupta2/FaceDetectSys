@@ -9,50 +9,162 @@
     <meta name="description" content="main page of the attandance system">
     <link rel="shortcut icon" href="img/html5.png" type="image/x-icon">
     <style>
+        body {
+            background-image: url("sky.avif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
 
+        .container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        #about_section {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 2em;
+            font-size: 1rem;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        #login_prompt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            align-items: center;
+            height: 100vh;
+            font-size: large;
+        }
+
+        #roll_no_div {
+            margin-bottom: 10px;
+        }
+
+        #roll_no_text_id {
+            height: 30px;
+            width: 100%;
+            border: none;
+            margin: 5px auto;
+
+        }
+
+        #password_div {
+            margin-bottom: 20px;
+        }
+
+        #password_text_id {
+            height: 30px;
+            width: 100%;
+            border: none;
+            margin: 5px auto;
+        }
+
+
+        #forget {
+            background-color: rgb(190, 40, 40);
+            padding: 10px 0;
+            margin: 10px 0;
+
+        }
+
+        #new-user {
+            background-color: rgb(7, 121, 83);
+            padding: 10px 0;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .login-button {
+            background-color: rgb(79, 145, 243);
+            padding: 10px;
+            width: 100%;
+            border: none;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #about_section {
+                padding: 10px;
+            }
+
+            #login_prompt {
+                padding: 50px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div id="about_section">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas corrupti nostrum animi distinctio accusantium nisi tempore, alias quasi cum! Mollitia perspiciatis alias suscipit saepe ea neque ad quibusdam vitae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus mollitia nemo nihil nisi unde consectetur sequi numquam odit! Obcaecati voluptatum unde, repellat dicta eum iste quam qui quisquam officiis!lore*1000 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis exercitationem harum dolorem esse aliquid, omnis eos quam, animi impedit quas voluptatem veritatis quos temporibus saepe ex? Quo, voluptas hic! Impedit!
-        Ratione fuga harum, blanditiis quibusdam unde dolorem, magni veniam quia iure sunt voluptates perspiciatis dolor? Mollitia nobis voluptates voluptatum possimus sint suscipit natus, saepe cumque facere ipsa ex dolorem sed.
-        Repellat rem iste similique ad deleniti aut possimus, reiciendis, atque est vel velit, error laboriosam tempore facere nam quidem corporis optio! Voluptas sint maxime repudiandae debitis impedit maiores, minus autem?
-        Tenetur laudantium maiores libero possimus, eos voluptate itaque labore molestias sit et modi. Perspiciatis, quaerat! Accusamus quaerat officiis, saepe inventore earum dolores nisi rerum fugiat quas amet, unde reprehenderit magni!
-        Accusantium, quidem ipsam distinctio deleniti repudiandae, quam ducimus ullam, illo porro tempora maiores incidunt praesentium blanditiis laborum? Explicabo voluptatibus, reprehenderit magnam, laborum, maxime nobis error asperiores tempora quam voluptate molestias?
-        Facere totam soluta, nihil ex quis aperiam incidunt officiis blanditiis! Animi, mollitia id enim a commodi repudiandae nam eum cumque? Minus, aliquid? Optio nisi doloribus, excepturi numquam reiciendis in enim.
-        At cupiditate iusto ex eligendi id autem, natus alias esse, sed recusandae sequi voluptatem expedita, pariatur voluptatibus vero veritatis mollitia quis doloribus ducimus beatae. Explicabo maiores nisi amet fugiat soluta.
-        Amet, eligendi blanditiis? Quis itaque qui iusto, nisi odit voluptas molestiae eaque vitae voluptatum facere exercitationem aliquam, officia ut doloremque veniam necessitatibus impedit minus architecto praesentium et cupiditate. Aperiam, doloribus.
-        Soluta neque, suscipit ullam, quasi eligendi recusandae reiciendis, nulla facilis doloremque molestias quas et. Architecto praesentium necessitatibus laborum atque voluptates tenetur libero? Hic fugiat vel non, voluptatem esse consequatur ut.
-        Officiis sapiente eum doloribus, cumque saepe at aut minus, ab quis dignissimos quas corporis dolorem sequi facere pariatur! Officiis, reprehenderit dolorum repudiandae enim eum explicabo laudantium quae expedita fuga quis?
-        Ullam tempora accusantium fuga sit necessitatibus, deleniti iure provident repellat voluptatem asperiores. Alias mollitia necessitatibus labore ullam cumque dolorem officia ipsa temporibus, neque odit voluptates harum beatae eaque maxime dolore.
-        Iste repellat, nulla corporis porro, veniam similique cumque aspernatur recusandae dolores itaque doloribus? Doloremque optio eius quibusdam explicabo reiciendis rerum quo laudantium nisi? Recusandae excepturi explicabo, exercitationem officiis sunt fugiat!
-        Saepe rem aut exercitationem rerum officia ut dolore, soluta, corporis omnis minus nam laborum repellat recusandae autem cumque, quae eveniet minima explicabo facere voluptatibus. Facere recusandae harum nihil aliquid qui.
-        Repudiandae nesciunt sapiente modi perferendis, optio ratione aliquid delectus itaque, amet dolorum quisquam! Ut adipisci doloribus ab accusamus tempora totam. Cupiditate enim ad vel labore. Nam consectetur veritatis dolores atque.
-        Tempore eveniet aliquam impedit? Sed sequi distinctio ducimus repellendus saepe, quo doloribus ad. Voluptatum ducimus nemo maxime consequuntur recusandae repellat nisi, perspiciatis nostrum, cupiditate delectus sint architecto laborum aut suscipit.</p>
-    </div>
-    <div id="login_prompt">
-        <form action="">
-            <div id="roll_no_div">
-                <label for="roll_no_text_id">Roll no.:&nbsp;&nbsp;</label>
-                <input type="text" name="roll_no" id="roll_no_text_id">
-            </div>
-            <div id="password_div">
-                <label for="password_text_id">Password:&nbsp;&nbsp;</label>
-                <input type="text" name="password" id="password_text_id">
-            </div>
-            <div id="login_button_div">
-                <button type="submit" class="">Sign Me In!!</button>
-            </div>
-            <div id="functionality_div">
-                <ul>
-                    <li><a href="./forget.html">Forget Password</a></li>
-                    <li><a href="./newusr.html">Create New User</a></li>
-                </ul>
-            </div>
-        </form>
-        <hr>
-        All Rights Reserved ©️ XYZ :P
+    <div class="container">
+        <div id="about_section">
+            <h1>WELCOME TO <span style="color: red;">PSIT</span></h1>
+            <h2>Kanpur</h2>
+            <hr>
+
+            <p>
+                The access to this website is limited to the institute Management, Faculty and Students only (Login to
+                your accounts to navigate the website). Visitors may kindly visit www.psit.ac.in for information about
+                the institutes.
+
+            </p>
+            <h3>Vision</h3>
+            <p>
+                To achieve excellence in professional education and create an ecosystem for the holistic development of
+                all stakeholders
+            </p>
+            <h3>Mission</h3>
+            <p>
+                To provide an environment of effective learning and innovation transforming students into dynamic,
+                responsible and productive professionals in their respective fields, who are capable of adapting to the
+                changing needs of the industry and society.
+            </p>
+        </div>
+        <div id="login_prompt">
+            <form id="login-form" action="">
+                <div id="roll_no_div">
+                    <label for="roll_no_text_id">Roll no.:&nbsp;&nbsp;</label>
+                    <input type="text" name="roll_no" id="roll_no_text_id">
+                </div>
+                <div id="password_div">
+                    <label for="password_text_id">Password:&nbsp;&nbsp;</label>
+                    <input type="text" name="password" id="password_text_id">
+                </div>
+                <div id="login_button_div">
+                    <button type="submit" class="login-button">Sign In</button>
+                </div>
+                <div id="functionality_div">
+                    <div id="forget"><a href="./forget.html">Forget Password</a></div>
+                    <div id="new-user"><a href="./newusr.html">Create New User</a></div>
+                </div>
+                <hr>
+                All Rights Reserved ©️ XYZ :P
+            </form>
+        </div>
     </div>
 </body>
 
